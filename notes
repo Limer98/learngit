@@ -1,0 +1,19 @@
+command lines for installing 'git':
+sudo apt-get
+sudo apt install git
+git --version
+git config --global user.name "qingcheng"
+git config --global user.email "root@qingcheng.net"
+git config --list
+
+new a repository:
+qingcheng@ZQC:~$ git init
+Initialized empty Git repository in /home/qingcheng/.git/
+qingcheng@ZQC:~$ git init newrepo
+Initialized empty Git repository in /home/qingcheng/newrepo/.git/
+
+if you want to know more information about command lines, you can type in:
+git --help
+
+Ctrl+space 切换输入法
+
