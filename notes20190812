@@ -1,0 +1,42 @@
+command lines for installing 'git':
+sudo apt-get
+sudo apt install git
+git --version
+git config --global user.name "qingcheng"
+git config --global user.email "root@qingcheng.net"
+git config --list
+
+new a repository:
+qingcheng@ZQC:~$ git init
+Initialized empty Git repository in /home/qingcheng/.git/
+qingcheng@ZQC:~$ git init newrepo
+Initialized empty Git repository in /home/qingcheng/newrepo/.git/
+if you want to know more information about command lines, you can type in:
+git --help
+
+Ctrl+space 切换输入法
+gitHub账号：Limer98_qingchengatonesix3
+
+修改idea配置文件
+sudo vi idea.vmoptions 
+sudo vi idea64.vmoptions
+-javaagent:/usr/local/idea-IU-183.6156.11/bin/JetbrainsCrack-4.2-release-enc.jar
+export JAVA_HOME=/usr/local/jdk1.8.0_221
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=.:${JAVA_HOME}/bin:$PATH
+
+成功安装jdk1.8.0_221的网址：https://blog.csdn.net/zbj18314469395/article/details/86064849
+qingcheng@ZQC:~/usr/lib/jvm$ tar -zxvf jdk-8u221-linux-x64.tar.gz
+sudo vi ~/.bashrc
+修改环境变量：
+#set oracle jdk environment
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_221
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH 
+source ~/.bashrc
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_221/bin/java 300
+javac -version
+将自己安装的JDK设置为默认的JDK版本:
+sudo update-alternatives --config java
